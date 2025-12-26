@@ -39,14 +39,16 @@ MINISHELL/
 
 ## Установка
 
-### 1. Клонируйте репозиторий:
+### 1. Клонируйте репозиторий и перейдите в папку minishell:
 
 git clone https://github.com/truehack/minishell.git
+cd minishell
 
 ### 2.  Установите зависимости:
 pip install -r requirements.txt
 
 ### 3. Запустите оболочку:
 python shell.py
+
 
 
