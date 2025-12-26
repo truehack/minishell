@@ -1,4 +1,4 @@
-Mini-shell - специальная оболочка с командами
+Mini-shell - специальная оболочка с командами,работающая с файловой системой компьютера
 
 Архитектура проекта
 ```
@@ -37,8 +37,16 @@ MINISHELL/
 └── requirements.txt    # Зависимости
 ```
 
-***Установка***
-*1)* git clone https://github.com/truehack/minishell.git
-*2)* pip install -r requirements.txt
-*3)* python shell.py
-*4)* Ctrl+C
+## Установка
+
+### 1. Клонируйте репозиторий:
+
+git clone https://github.com/truehack/minishell.git
+
+### 2.  Установите зависимости:
+pip install -r requirements.txt
+
+### 3. Запустите оболочку:
+python shell.py
+
+
