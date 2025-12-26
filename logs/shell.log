@@ -1,0 +1,10 @@
+
+[2025-12-26 14:58:51] ls [] OK
+[2025-12-26 14:59:08] ls ['-l'] OK
+[2025-12-26 14:59:15] cd test_folder OK
+[2025-12-26 15:02:17] cat test_folder/file1.txt OK
+[2025-12-26 15:02:30] cat test_folder/file2.txt OK
+[2025-12-26 15:02:36] cat test_folder/subfolder/file3.txt OK
+[2025-12-26 15:03:19] mv ERROR: name 'register_for_undo' is not defined
+[2025-12-26 15:03:27] rm ERROR: name 'register_for_undo' is not defined
+

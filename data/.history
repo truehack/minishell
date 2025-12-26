@@ -1,0 +1,20 @@
+help
+ls
+ls -l
+cd
+cd ..
+ls
+ls -l
+cd test_folder
+ls
+ls -l
+cd test_folder
+cat test_folder/file1.txt
+cat test_folder/file2.txt
+cat test_folder/subfolder/file3.txt
+cp readme_test.md test_folder/copied_readme.md
+mv test_folder/file1.txt test_folder/file1_renamed.txt
+rm test_folder/file1_renamed.txt
+undo_last
+undo
+cp
