@@ -1,0 +1,44 @@
+Mini-shell - специальная оболочка с командами
+
+Архитектура проекта
+```
+MINISHELL/
+├── core/               # Ядро шелла: основная логика, обработка команд
+│   ├── __init__.py
+│   ├── commands.py     # Реализация встроенных команд (history, undo, grep и др.)
+│   ├── logger.py       # Логирование действий пользователя
+│   └── utils.py        # Вспомогательные функции (парсинг, валидация и т.п.)
+│
+├── data/               # Хранение пользовательских данных
+│   ├── .trash/         # Удалённые файлы (если реализовано)
+│   ├── .history        # История команд
+│   └── .undo.json      # Стек операций для отмены (undo)
+│
+├── logs/               # Логи работы шелла
+│   └── shell.log       # Общий лог событий
+│
+├── plugins/            # Плагины (расширения функциональности)
+│   ├── __init__.py
+│   ├── archive.py      # Команда для работы с архивами
+│   ├── grep.py         # Поиск по файлам
+│   ├── history.py      # Альтернативная или дополнительная логика истории
+│
+├── test_folder/        # Тестовые данные и файлы
+│   ├── subfolder/
+│   │   ├── file3.txt
+│   │   └── file4.log
+│   ├── copied_readme.md
+│   └── file2.txt
+├── test_folder_empty/
+|       ├──.hidden_file
+├── readme_test.md
+├── shell.py            # Точка входа — запуск шелла
+├── README.md           # Документация
+└── requirements.txt    # Зависимости
+```
+
+***Установка***
+*1)* git clone https://github.com/truehack/minishell.git
+*2)* pip install -r requirements.txt
+*3)* python shell.py
+*4)* Ctrl+C
